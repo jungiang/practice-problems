@@ -1,3 +1,28 @@
+/*
+testVals(array) = [
+  [0] = Object {
+    obj1 = question(property): 'string'(value),
+    obj2 = testVals(property-object): {
+      obj1 = inputs(property-array): [
+        [0] = array[#s]
+        [1] = array[#s]
+      ],
+      obj2 = array[#s]
+    }
+    functionToTest: sumArray 
+  }
+]
+var a = 4;
+var answer = ++a - --a + a * 5 - a++; a =5
+var answer = 5 - --a + a * 5 - a++; a = 4
+var answer = 5 - 4 + a * 5 - a++; a = 4
+var answer = 1 + a * 5 - a++; a = 4
+var answer = 1 + 4 * 5 - a++; a = 4
+var answer = 1 + 20 - a++; a = 4
+var answer = 21 - a++; a = 4
+var answer = 21 - 4; a = 5
+var answer = 17; a = 5
+*/
 var testVals = [{
   question: `sumArray: given an array of numbers, add up all the numbers
     for example: [1,5,3,2,6]
@@ -15,7 +40,8 @@ var testVals = [{
     ]
   },
   functionToTest: 'sumArray'
-}, {
+}, //Finished and Working
+{
   question: `fitWithinVal: given an array and a number, 
     sum the array until you reach the number.  
     keep adding any values that would total below the given value
