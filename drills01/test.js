@@ -12,16 +12,6 @@ testVals(array) = [
     functionToTest: sumArray 
   }
 ]
-var a = 4;
-var answer = ++a - --a + a * 5 - a++; a =5
-var answer = 5 - --a + a * 5 - a++; a = 4
-var answer = 5 - 4 + a * 5 - a++; a = 4
-var answer = 1 + a * 5 - a++; a = 4
-var answer = 1 + 4 * 5 - a++; a = 4
-var answer = 1 + 20 - a++; a = 4
-var answer = 21 - a++; a = 4
-var answer = 21 - 4; a = 5
-var answer = 17; a = 5
 */
 var testVals = [{
   question: `sumArray: given an array of numbers, add up all the numbers

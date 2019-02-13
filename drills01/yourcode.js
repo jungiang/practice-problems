@@ -7,14 +7,35 @@ function sumArray(array){
     return sumArray;
 }
 
-function fitWithinVal(){
-
+function fitWithinVal(inputs, testVal){
+  var answerArray = [];
+  var arraySum = 0;
+  for(i = 0; i < inputs.length; i++){
+    arraySum += inputs[i];
+    if(arraySum < testVal){
+      answerArray.push(inputs[i]);
+    }else{
+      arraySum -= inputs[i];
+    }
+  }
+  return answerArray;
 }
 
-function getAllNamesShorterThan(){
-
+function getAllNamesShorterThan(inputs, testVal){
+  var answerArray = [];
+  for(i = 0; i < inputs.length; i++){
+    var nameSize = inputs[i].length;
+    if(nameSize < testVal){
+      answerArray.push(inputs[i]);
+    }
+  }
+  return answerArray;
 }
+function makeLabel(inputs){
+  var address = inputs['home address'];
+  var shippingLabel = `${inputs.greeting} ${inputs.givenName} ${inputs.familyName}
+${address.streetNumber} ${address.streetName}
+${address.city}, ${address.state} ${address.zip}`;
 
-function makeLabel(){
-
+  return shippingLabel;
 }
