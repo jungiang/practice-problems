@@ -7,13 +7,13 @@
 - <a href="https://github.com/Learning-Fuze/practice-problems/blob/master/drills06/README.md" target="_blank">jQuery practice problems: removeClassFromElement<br>hideElements<br>addAttributeToElement<br>addAttributeToElement</a>
 
 ### Level 0
-- <a href="practice29/README.md" target="_blank">do math</a>
-- <a href="practice30/README.md" target="_blank">random number or array element</a>
-- <a href="practice31/README.md" target="_blank">math combo</a>
-- <a href="practice32/README.md" target="_blank">find middle of string</a>
-- <a href="practice33/README.md" target="_blank">invert positive number</a>
-- <a href="practice36/README.md" target="_blank">get vowels</a>
-- <a href="practice37/README.md" target="_blank">alternate caps</a>
+- <a href="practice29/README.md" target="_blank">do math</a><!--DONE-->
+- <a href="practice30/README.md" target="_blank">random number or array element</a><!--DONE-->
+- <a href="practice31/README.md" target="_blank">math combo</a><!--DONE-->
+- <a href="practice32/README.md" target="_blank">find middle of string</a><!--DONE-->
+- <a href="practice33/README.md" target="_blank">invert positive number</a><!--DONE-->
+- <a href="practice36/README.md" target="_blank">get vowels</a><!--DONE-->
+- <a href="practice37/README.md" target="_blank">alternate caps</a><!--DONE-->
 
 ### Level 1
 - <a href="practice02/README.md" target="_blank">Array reverser</a>

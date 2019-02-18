@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>practice36</title>
+    <script>
+        var vowels = ['a', 'e', 'i', 'o', 'u'];
+        function vowelCollector(string){
+            var newString = '';
+            for(var stringPosition = 0; stringPosition < string.length; stringPosition++){
+                for(var vowelsPosition = 0; vowelsPosition < vowels.length; vowelsPosition++){
+                    if(string[stringPosition] === vowels[vowelsPosition]){
+                        newString = newString + string[stringPosition];
+                    }
+                }
+            }
+            return newString;
+        }
+        console.log(`parameters: "four score and seven years ago": ${vowelCollector('four score and seven years ago')}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

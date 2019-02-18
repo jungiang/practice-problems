@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>practice37</title>
+    <script>
+        function evenCaps(string){
+            var newString = '';
+            for(var stringPosition = 0; stringPosition < string.length; stringPosition++){
+                if(stringPosition%2 === 1){
+                    newString = newString + string[stringPosition].toUpperCase();
+                }else{
+                    newString = newString + string[stringPosition];
+                }
+            }
+            return newString;
+        }
+        console.log(`evenCaps(amazing): ${evenCaps('amazing')}`);
+        console.log(`evenCaps(abcdefghijklmnopqrstuvwxyz): ${evenCaps('abcdefghijklmnopqrstuvwxyz')}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

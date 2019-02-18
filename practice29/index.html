@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>practice29</title>
+    <script>
+        function do_math(num1, num2, operator){
+            var answer = 0;
+            switch(operator){
+                case '+': answer = num1 + num2;
+                break;
+                case '-': answer = num1 - num2;
+                break;
+                case '*': answer = num1 * num2;
+                case 'x': answer = num1 * num2;
+                case 'X': answer = num1 * num2;
+                break;
+                case '/': answer = num1 / num2;
+            }
+            return answer;
+        }
+        console.log(`5 + 2 = ${do_math(5, 2, '+')}`);
+        console.log(`5 - 2 = ${do_math(5, 2, '-')}`);
+        console.log(`5 * 2 = ${do_math(5, 2, '*')}`);
+        console.log(`5 x 2 = ${do_math(5, 2, 'x')}`);
+        console.log(`5 X 2 = ${do_math(5, 2, 'X')}`);
+        console.log(`5 / 2 = ${do_math(5, 2, '/')}`);
+        console.log('3 * 2 / 1 + 5 - 4 = ', do_math(do_math(do_math(do_math(3, 2, '*'), 1, '/'), 5, '+'), 4, '-'));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

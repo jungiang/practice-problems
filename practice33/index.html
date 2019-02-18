@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>practice33</title>
+    <script>
+        function invert_negatives(num){
+            if(num > 0){
+                var negative = num * 2;
+                var answer = num - negative;
+            }else if(num < 0){
+                var answer = num;
+            }else{
+                return false;
+            }
+            return answer;
+        }
+        console.log(`invert_negatives(-5): ${invert_negatives(-5)}`);
+        console.log(`invert_negatives(4000): ${invert_negatives(4000)}`);
+        console.log(`invert_negatives('puppies'): ${invert_negatives('puppies')}`);
+        console.log(`invert_negatives(1337): ${invert_negatives(1337)}`);
+        console.log(`invert_negatives(-1337): ${invert_negatives(-1337)}`);
+        console.log(`nvert_negatives([1, 2, 3, 4]): ${invert_negatives([1, 2, 3, 4])}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>practice32</title>
+    <script>
+        function find_middle_letters(string){
+            if(string.length%2 === 1){
+                var middleNum = Math.floor(string.length/2);
+                var middleLetter = string[middleNum];
+            }else{
+                var middleNum = string.length/2 - 1;
+                var middleLetter = string[middleNum] + string[middleNum+1];
+            }
+            return middleLetter;
+        }
+        console.log(`find_middle_letters('seven'): ${find_middle_letters('seven')}`);
+        console.log(`find_middle_letters('dish'): ${find_middle_letters('dish')}`);
+        console.log(`find_middle_letters('abcdefghijklmno'): ${find_middle_letters('abcdefghijklmno')}`)
+        console.log(`find_middle_letters('abcdefghijklmnop'): ${find_middle_letters('abcdefghijklmnop')}`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
