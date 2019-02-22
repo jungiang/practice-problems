@@ -34,50 +34,24 @@ function getMinMaxMean(array){
     output.mean/=array.length;
     return output;
 }
-/*
-question: `findMode: Given an array of numbers, find the number that occurs the most often
-    for example: [5,2,7,18,2,42,5,2]
-      returns 2, since it occurs 3 times.  If 2 numbers occur the same amount, return the last one`,
-  testVals: {
-    inputs: [
-      [[2,4,6,3,4,3,2,4,3,5]],
-      [[4,6,3,6,1,8,4,3,3,4,5,6,6,7]],
-    ],
-    outputs: [
-      3, 6
-    ]
-  },
-  functionToTest: 'findMode'
-*/
 
 function findMode(array){
-    debugger;
-    var sortArray = array.sort();
     var modeNumber = null;
-    var currentMode = 0;
-    var nextMode = 0;
-    var compareVar = null;
-    for(i = 0; i < sortArray.length; i++){
-        if(sortArray[i] === compareVar){
-            currentMode++;
-            compareVar = sortArray[i];
-        }else{
-            nextMode++;
-            if(nextMode >= currentMode){
-                currentMode = nextMode;
-                compareVar = sortArray[i];
-                var oldModeNumber = sortArray[i-nextMode];
-                if(array.lastIndexOf(compareVar) > array.lastIndexOf(oldModeNumber)){
-                    modeNumber = sortArray[i];
-                }else{
-                    modeNumber = sortArray[i-nextMode];
-                }
-                nextMode = 0;
-
-            }else{
-                compareVar = sortArray[i-nextMode];
+    var currentMode = null;
+    var newModeNumber = null;
+    var newMode = null;
+    for(var i = 0; i < array.length; i++){
+        newModeNumber = array[i];
+        for(var j = 0; j < array.length; j++){
+            if(array[j] === newModeNumber){
+                newMode++;
             }
         }
+        if(newMode >= currentMode){
+            modeNumber = newModeNumber;
+            currentMode = newMode;
+            newMode = 0;
+        }    
     }
     return modeNumber;
 }
